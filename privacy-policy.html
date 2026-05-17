@@ -34,12 +34,12 @@
       <section>
         <h2>1. Scope</h2>
         <p>This Policy applies to each app and related support service provided by the developer where this URL is shown as the privacy policy in App Store Connect, inside the app, or in support information.</p>
-        <p>Available features, advertising, analytics, crash reporting, purchases, location information, notifications, and other functions may differ by app. In that case, this Policy applies according to the features that are actually enabled in each app.</p>
+        <p>Available features, advertising, analytics, crash reporting, purchases, location information, photos and camera, microphone and speech recognition, HealthKit, iCloud or CloudKit sharing, WeatherKit, notifications, and other functions may differ by app. In that case, this Policy applies according to the features that are actually enabled in each app.</p>
       </section>
 
       <section>
         <h2>2. Information Collected</h2>
-        <p>To provide apps, improve quality, analyze crashes, deliver ads, and respond to inquiries, the developer may collect or process the following information through third-party services.</p>
+        <p>To provide apps, improve quality, analyze crashes, deliver ads, respond to inquiries, and provide features requested by users, the developer may collect, store, or process the following information. Some information may be stored only on the device, while some may be processed through platform or third-party services when the related feature is enabled.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -71,6 +71,26 @@
                 <td>App improvement, feature analysis, understanding usage trends</td>
               </tr>
               <tr>
+                <td>Location information</td>
+                <td>Approximate or precise location, map regions, route records, nearby places or stations selected by the user</td>
+                <td>Map display, route records, weather and activity guidance, nearby information, and app functionality</td>
+              </tr>
+              <tr>
+                <td>User-provided content and app data</td>
+                <td>Text entered by the user, app records, settings, categories, reminders, selected images, generated or edited results, profile information, and shared records</td>
+                <td>Providing app functions, saving user settings and records, restoring data, and sharing data when enabled by the user</td>
+              </tr>
+              <tr>
+                <td>Photos, camera, audio, and speech information</td>
+                <td>Photos or images selected by the user, camera images, microphone audio, recognized speech text</td>
+                <td>Profile images, image organization or editing, voice input, text creation, and other features requested by the user</td>
+              </tr>
+              <tr>
+                <td>Health and activity information</td>
+                <td>HealthKit data such as steps, activity, or related metrics that the user permits the app to read</td>
+                <td>Providing health, activity, or capacity-related features requested by the user</td>
+              </tr>
+              <tr>
                 <td>Inquiry information</td>
                 <td>Email address, inquiry text, information attached by the user</td>
                 <td>Responding to inquiries, identity confirmation, support quality improvement</td>
@@ -81,12 +101,17 @@
       </section>
 
       <section>
-        <h2>3. Third-Party Services</h2>
-        <p>The apps may use the following third-party services. Information collected, processed, and stored by each service is handled according to the provider's policies.</p>
+        <h2>3. Third-Party and Platform Services</h2>
+        <p>The apps may use the following third-party services and Apple platform services. Information collected, processed, and stored by each service is handled according to the provider's policies and the user's device settings.</p>
         <ul>
           <li>Firebase Crashlytics: crash analysis and diagnostic information collection</li>
           <li>Firebase Analytics: usage analysis and quality improvement</li>
-          <li>Google AdMob: ad delivery, ad performance measurement, and fraud prevention</li>
+          <li>Google AdMob and Google User Messaging Platform: ad delivery, ad performance measurement, fraud prevention, and consent management</li>
+          <li>iCloud and CloudKit: data backup, synchronization, and sharing when enabled by the user</li>
+          <li>Apple HealthKit: reading permitted health and activity data for app functionality</li>
+          <li>Apple Speech framework: speech recognition for voice input features</li>
+          <li>Apple WeatherKit, MapKit, and Apple Maps: weather, map, location, and nearby information features</li>
+          <li>Apple Photos and Camera frameworks: selecting, importing, or capturing images for app functionality</li>
         </ul>
         <p>For Google's use of data, please see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses data when you use partners' sites or apps</a>. For Firebase privacy and security information, please see <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a>.</p>
       </section>
@@ -99,6 +124,7 @@
           <li>Investigating and improving bugs, crashes, and performance issues</li>
           <li>Delivering ads, improving ad quality, and preventing misuse</li>
           <li>Analyzing usage, improving features, and enhancing user experience</li>
+          <li>Providing location, map, weather, health, speech, photo, notification, synchronization, and sharing features requested by the user</li>
           <li>Responding to inquiries and sending important notices</li>
           <li>Complying with laws, regulations, terms, App Store requirements, and other platform requirements</li>
         </ul>
@@ -108,41 +134,54 @@
         <h2>5. Advertising Identifiers and Consent</h2>
         <p>Apps that display ads may use advertising services such as Google AdMob. Where permission is required under iOS App Tracking Transparency, the app controls use of advertising identifiers according to the user's consent status.</p>
         <p>In regions where consent is legally required, such as the European Economic Area, the United Kingdom, and Switzerland, the app may display consent messages related to ads and analytics.</p>
+        <p>The developer does not intentionally provide HealthKit data, photos, camera images, microphone audio, speech audio, or the exact content entered by users to advertising services for ad targeting.</p>
       </section>
 
       <section>
-        <h2>6. Sharing with Third Parties</h2>
+        <h2>6. Platform Permissions and Sensitive Information</h2>
+        <p>Some apps use iOS permissions or Apple platform features only when the relevant feature is enabled or the user grants permission. Users can review or change permissions in the iOS Settings app, the Health app, iCloud settings, or other Apple-provided settings screens.</p>
+        <ul>
+          <li>Location information is used for features such as maps, route records, nearby information, and weather or activity guidance.</li>
+          <li>HealthKit information is read only with the user's permission and is used for app functionality. It is not used for advertising.</li>
+          <li>Microphone and speech recognition are used only when the user chooses voice input. Speech recognition may be processed by Apple services depending on device settings and availability.</li>
+          <li>Photos and camera access are used for images selected, imported, or captured by the user. Apps do not access the full photo library unless the user grants the relevant permission.</li>
+          <li>iCloud and CloudKit may store, sync, or share app data. Data shared through CloudKit may be visible to invited participants according to the user's sharing settings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Sharing with Third Parties</h2>
         <p>The developer does not sell information that directly identifies users to third parties, except where required by law, with the user's consent, or where processing is entrusted to external service providers to the extent necessary to provide the apps.</p>
       </section>
 
       <section>
-        <h2>7. Retention Period</h2>
-        <p>Collected information is retained for the period necessary to achieve the purposes of use, or for the period required by law. Retention periods for information processed by third-party services such as Crashlytics, AdMob, and Firebase Analytics follow the specifications and policies of each service.</p>
+        <h2>8. Retention Period</h2>
+        <p>Collected information is retained for the period necessary to achieve the purposes of use, or for the period required by law. Information stored only on the user's device is generally retained until the user deletes it in the app, resets app data, or deletes the app. Data stored in iCloud, CloudKit, HealthKit, Photos, or other Apple services follows the user's Apple account and device settings. Retention periods for information processed by third-party services such as Crashlytics, AdMob, and Firebase Analytics follow the specifications and policies of each service.</p>
       </section>
 
       <section>
-        <h2>8. Inquiries and Data Requests</h2>
+        <h2>9. Inquiries and Data Requests</h2>
         <p>For inquiries about personal information handling or data-related requests, please contact the developer through the inquiry form. For information managed by the developer, requests will be handled within a reasonable scope based on applicable laws and service specifications.</p>
-        <p>The inquiry form uses Google Forms. Information entered in the form is used to respond to inquiries, identify the relevant app, and contact the user as necessary.</p>
+        <p>For information stored only on the user's device, users may delete it through app features, iOS settings, or by deleting the app. For information controlled by Apple services such as HealthKit, iCloud, Photos, or speech recognition, users may need to use Apple-provided settings or account tools. The inquiry form uses Google Forms. Information entered in the form is used to respond to inquiries, identify the relevant app, and contact the user as necessary.</p>
       </section>
 
       <section>
-        <h2>9. Children's Privacy</h2>
+        <h2>10. Children's Privacy</h2>
         <p>The developer does not knowingly collect information that directly identifies children under the age of 13 without parental consent. If information about a child may have been submitted by mistake, a parent or guardian should contact the developer.</p>
       </section>
 
       <section>
-        <h2>10. Security</h2>
+        <h2>11. Security</h2>
         <p>The developer takes reasonable security measures to prevent leakage, loss, or damage of collected information. However, complete security cannot be guaranteed due to the nature of internet communications and external services.</p>
       </section>
 
       <section>
-        <h2>11. Changes to This Policy</h2>
+        <h2>12. Changes to This Policy</h2>
         <p>This Policy may be updated in response to changes in laws, service content, SDKs, or third-party services used. Important changes will be announced on this page.</p>
       </section>
 
       <section class="panel">
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
         <p>For inquiries about this Policy or requests for disclosure, correction, deletion, or similar handling of personal information, please contact the developer through the inquiry form below.</p>
         <p><a href="https://forms.gle/YtQSMnFPDuYubuL5A" rel="noopener">Inquiry form</a></p>
       </section>
@@ -163,12 +202,12 @@
       <section>
       <h2>1. 適用範囲</h2>
       <p>本ポリシーは、開発者が提供し、App Store Connect、アプリ内、またはサポート案内で本URLをプライバシーポリシーとして表示している各アプリおよび関連するサポート対応に適用されます。</p>
-      <p>アプリごとに利用している機能、広告、解析、クラッシュレポート、課金、位置情報、通知などの有無が異なる場合があります。その場合は、実際に各アプリで有効化されている機能に応じて本ポリシーが適用されます。</p>
+      <p>アプリごとに利用している機能、広告、解析、クラッシュレポート、課金、位置情報、写真・カメラ、マイク・音声認識、HealthKit、iCloudまたはCloudKit共有、WeatherKit、通知などの有無が異なる場合があります。その場合は、実際に各アプリで有効化されている機能に応じて本ポリシーが適用されます。</p>
     </section>
 
     <section>
       <h2>2. 取得する情報</h2>
-      <p>アプリの提供、品質改善、クラッシュ解析、広告配信、問い合わせ対応のため、以下の情報を取得または第三者サービスを通じて処理する場合があります。</p>
+      <p>アプリの提供、品質改善、クラッシュ解析、広告配信、問い合わせ対応、利用者が選択した機能の提供のため、以下の情報を取得、保存、または処理する場合があります。情報の一部は端末内にのみ保存される場合があり、関連機能が有効な場合はプラットフォーム機能または第三者サービスを通じて処理される場合があります。</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -200,6 +239,26 @@
               <td>アプリ改善、機能分析、利用状況の把握</td>
             </tr>
             <tr>
+              <td>位置情報</td>
+              <td>おおよその位置情報または正確な位置情報、地図範囲、経路記録、利用者が選択した近隣施設や地点</td>
+              <td>地図表示、経路記録、天気や活動の目安、近隣情報、アプリ機能の提供</td>
+            </tr>
+            <tr>
+              <td>利用者が入力した内容およびアプリ内データ</td>
+              <td>入力したテキスト、記録、設定、カテゴリ、リマインダー、選択した画像、生成・編集結果、プロフィール情報、共有記録</td>
+              <td>アプリ機能の提供、設定や記録の保存、データ復元、利用者が有効化した共有機能の提供</td>
+            </tr>
+            <tr>
+              <td>写真・カメラ・音声・音声認識情報</td>
+              <td>利用者が選択した写真や画像、カメラで撮影した画像、マイク音声、音声認識されたテキスト</td>
+              <td>プロフィール画像、画像整理・編集、音声入力、文章作成など、利用者が選択した機能の提供</td>
+            </tr>
+            <tr>
+              <td>ヘルスケア・活動情報</td>
+              <td>利用者が読み取りを許可した歩数、活動量、その他HealthKit関連データ</td>
+              <td>ヘルスケア、活動量、キャパシティ等に関連するアプリ機能の提供</td>
+            </tr>
+            <tr>
               <td>問い合わせ情報</td>
               <td>メールアドレス、問い合わせ本文、添付された情報</td>
               <td>問い合わせへの回答、本人確認、サポート品質改善</td>
@@ -210,12 +269,17 @@
     </section>
 
     <section>
-      <h2>3. 第三者サービスの利用</h2>
-      <p>アプリでは、以下の第三者サービスを利用する場合があります。各サービスによって取得、処理、保存される情報は、各提供者のポリシーに従って取り扱われます。</p>
+      <h2>3. 第三者サービス・プラットフォーム機能の利用</h2>
+      <p>アプリでは、以下の第三者サービスおよびAppleのプラットフォーム機能を利用する場合があります。各サービスによって取得、処理、保存される情報は、各提供者のポリシーおよび利用者の端末設定に従って取り扱われます。</p>
       <ul>
         <li>Firebase Crashlytics: クラッシュ解析、診断情報の収集</li>
         <li>Firebase Analytics: 利用状況の分析、品質改善</li>
-        <li>Google AdMob: 広告配信、広告効果測定、不正防止</li>
+        <li>Google AdMobおよびGoogle User Messaging Platform: 広告配信、広告効果測定、不正防止、同意管理</li>
+        <li>iCloudおよびCloudKit: 利用者が有効化した場合のデータのバックアップ、同期、共有</li>
+        <li>Apple HealthKit: 利用者が許可したヘルスケア・活動情報の読み取り</li>
+        <li>Apple Speech framework: 音声入力機能における音声認識</li>
+        <li>Apple WeatherKit、MapKit、Apple Maps: 天気、地図、位置情報、近隣情報に関する機能</li>
+        <li>Apple PhotosおよびCamera framework: アプリ機能のための画像選択、読み込み、撮影</li>
       </ul>
       <p>Googleによるデータ利用については、<a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Googleのパートナーサイトやアプリでのデータ使用</a>をご確認ください。Firebaseのプライバシーとセキュリティについては、<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebaseのプライバシーとセキュリティ</a>をご確認ください。</p>
     </section>
@@ -228,6 +292,7 @@
         <li>不具合、クラッシュ、パフォーマンス問題の調査と改善</li>
         <li>広告の配信、広告品質の改善、不正利用の防止</li>
         <li>利用状況の分析、機能改善、ユーザー体験の向上</li>
+        <li>位置情報、地図、天気、ヘルスケア、音声入力、写真、通知、同期、共有など、利用者が選択した機能の提供</li>
         <li>問い合わせ対応、重要なお知らせの連絡</li>
         <li>法令、規約、App Storeその他プラットフォーム要件への対応</li>
       </ul>
@@ -237,41 +302,54 @@
       <h2>5. 広告識別子と同意</h2>
       <p>広告を表示するアプリでは、Google AdMob等の広告配信サービスを利用する場合があります。iOSのApp Tracking Transparencyにより許可が必要な場合、アプリは利用者の同意状況に応じて広告識別子の利用を制御します。</p>
       <p>欧州経済領域、英国、スイスなど、法令上の同意取得が必要な地域では、広告や解析に関する同意メッセージを表示する場合があります。</p>
+      <p>開発者は、HealthKitデータ、写真、カメラ画像、マイク音声、音声そのもの、利用者が入力した正確な内容を、広告ターゲティングのために広告サービスへ意図的に提供しません。</p>
     </section>
 
     <section>
-      <h2>6. 第三者提供</h2>
+      <h2>6. プラットフォーム権限と機微な情報</h2>
+      <p>一部のアプリでは、関連機能が有効な場合、または利用者が許可した場合にのみ、iOSの権限やAppleのプラットフォーム機能を利用します。利用者は、iOSの設定アプリ、ヘルスケアアプリ、iCloud設定、その他Appleが提供する設定画面から権限を確認または変更できます。</p>
+      <ul>
+        <li>位置情報は、地図、経路記録、近隣情報、天気や活動の目安などの機能に利用します。</li>
+        <li>HealthKit情報は、利用者の許可に基づいて読み取り、アプリ機能のために利用します。広告目的には利用しません。</li>
+        <li>マイクおよび音声認識は、利用者が音声入力を選択した場合にのみ利用します。端末設定や利用可能状況により、音声認識はAppleのサービスで処理される場合があります。</li>
+        <li>写真およびカメラへのアクセスは、利用者が選択、読み込み、または撮影した画像に関する機能に利用します。関連する許可がない限り、写真ライブラリ全体へアクセスしません。</li>
+        <li>iCloudおよびCloudKitは、アプリデータの保存、同期、共有に利用される場合があります。CloudKitで共有されたデータは、利用者の共有設定に従い、招待された参加者に表示される場合があります。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. 第三者提供</h2>
       <p>開発者は、法令に基づく場合、利用者の同意がある場合、またはアプリ提供に必要な範囲で外部サービス提供者に処理を委託する場合を除き、利用者を直接特定する情報を第三者に販売しません。</p>
     </section>
 
     <section>
-      <h2>7. 保存期間</h2>
-      <p>取得した情報は、利用目的の達成に必要な期間、または法令上必要な期間保存します。Crashlytics、AdMob、Firebase Analytics等の第三者サービスで処理される情報の保存期間は、各サービスの仕様およびポリシーに従います。</p>
+      <h2>8. 保存期間</h2>
+      <p>取得した情報は、利用目的の達成に必要な期間、または法令上必要な期間保存します。利用者の端末内にのみ保存される情報は、通常、利用者がアプリ内で削除する、アプリデータをリセットする、またはアプリを削除するまで保存されます。iCloud、CloudKit、HealthKit、写真、その他Appleサービスに保存されるデータは、利用者のAppleアカウントおよび端末設定に従います。Crashlytics、AdMob、Firebase Analytics等の第三者サービスで処理される情報の保存期間は、各サービスの仕様およびポリシーに従います。</p>
     </section>
 
     <section>
-      <h2>8. お問い合わせ・データに関するご依頼</h2>
+      <h2>9. お問い合わせ・データに関するご依頼</h2>
       <p>個人情報の取り扱いに関するお問い合わせや、データに関するご依頼は、お問い合わせフォームからご連絡ください。開発者が管理する情報については、法令および各サービスの仕様に基づき、合理的な範囲で対応します。</p>
-      <p>お問い合わせフォームにはGoogle Formsを使用します。フォームに入力された情報は、問い合わせ対応、対象アプリの確認、および必要な連絡のために利用します。</p>
+      <p>利用者の端末内にのみ保存される情報は、アプリ内機能、iOS設定、またはアプリの削除により削除できる場合があります。HealthKit、iCloud、写真、音声認識などAppleサービスが管理する情報については、Appleが提供する設定またはアカウント管理機能での対応が必要となる場合があります。お問い合わせフォームにはGoogle Formsを使用します。フォームに入力された情報は、問い合わせ対応、対象アプリの確認、および必要な連絡のために利用します。</p>
     </section>
 
     <section>
-      <h2>9. 子どものプライバシー</h2>
+      <h2>10. 子どものプライバシー</h2>
       <p>開発者は、保護者の同意なく、13歳未満の児童から個人を直接特定する情報を意図して取得しません。児童に関する情報が誤って送信された可能性がある場合は、保護者の方から問い合わせ先までご連絡ください。</p>
     </section>
 
     <section>
-      <h2>10. セキュリティ</h2>
+      <h2>11. セキュリティ</h2>
       <p>開発者は、取得した情報の漏えい、滅失、毀損を防ぐため、合理的な安全管理措置を講じます。ただし、インターネット通信や外部サービスの性質上、完全な安全性を保証するものではありません。</p>
     </section>
 
     <section>
-      <h2>11. ポリシーの変更</h2>
+      <h2>12. ポリシーの変更</h2>
       <p>本ポリシーは、法令変更、サービス内容、利用するSDKや第三者サービスの変更に応じて改定される場合があります。重要な変更がある場合は、本ページで告知します。</p>
     </section>
 
     <section class="panel">
-      <h2>12. お問い合わせ</h2>
+      <h2>13. お問い合わせ</h2>
       <p>本ポリシーに関するお問い合わせ、個人情報の開示・訂正・削除等のご依頼は、以下のお問い合わせフォームからご連絡ください。</p>
       <p><a href="https://forms.gle/YtQSMnFPDuYubuL5A" rel="noopener">お問い合わせフォーム</a></p>
     </section>
